@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/todolist-by-kjt/static/css/main.2cce8147.chunk.css",
-    "main.js": "/todolist-by-kjt/static/js/main.554c2732.chunk.js",
-    "main.js.map": "/todolist-by-kjt/static/js/main.554c2732.chunk.js.map",
-    "runtime~main.js": "/todolist-by-kjt/static/js/runtime~main.b737434e.js",
-    "runtime~main.js.map": "/todolist-by-kjt/static/js/runtime~main.b737434e.js.map",
-    "static/js/2.b41502e9.chunk.js": "/todolist-by-kjt/static/js/2.b41502e9.chunk.js",
-    "static/js/2.b41502e9.chunk.js.map": "/todolist-by-kjt/static/js/2.b41502e9.chunk.js.map",
-    "index.html": "/todolist-by-kjt/index.html",
-    "precache-manifest.e1d167da9b2d1db3d4b62e6163c9714f.js": "/todolist-by-kjt/precache-manifest.e1d167da9b2d1db3d4b62e6163c9714f.js",
-    "service-worker.js": "/todolist-by-kjt/service-worker.js",
-    "static/css/main.2cce8147.chunk.css.map": "/todolist-by-kjt/static/css/main.2cce8147.chunk.css.map",
-    "static/media/logo.svg": "/todolist-by-kjt/static/media/logo.5d5d9eef.svg"
+    "main.css": "/todo-by-kjt/static/css/main.2cce8147.chunk.css",
+    "main.js": "/todo-by-kjt/static/js/main.2ff05205.chunk.js",
+    "main.js.map": "/todo-by-kjt/static/js/main.2ff05205.chunk.js.map",
+    "runtime~main.js": "/todo-by-kjt/static/js/runtime~main.d81cd466.js",
+    "runtime~main.js.map": "/todo-by-kjt/static/js/runtime~main.d81cd466.js.map",
+    "static/js/2.b41502e9.chunk.js": "/todo-by-kjt/static/js/2.b41502e9.chunk.js",
+    "static/js/2.b41502e9.chunk.js.map": "/todo-by-kjt/static/js/2.b41502e9.chunk.js.map",
+    "index.html": "/todo-by-kjt/index.html",
+    "precache-manifest.e4c29aedd9d34d0a28feecb9e37f2682.js": "/todo-by-kjt/precache-manifest.e4c29aedd9d34d0a28feecb9e37f2682.js",
+    "service-worker.js": "/todo-by-kjt/service-worker.js",
+    "static/css/main.2cce8147.chunk.css.map": "/todo-by-kjt/static/css/main.2cce8147.chunk.css.map",
+    "static/media/logo.svg": "/todo-by-kjt/static/media/logo.5d5d9eef.svg"
   }
 }
