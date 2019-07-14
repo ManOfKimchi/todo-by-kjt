@@ -1,24 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+import ToDoHead from './components/head/ToDoHead';
+import ToDoInput from './components/add/ToDoInput';
+import ToDoItemList from './components/items/ToDoItemList';
+
+let testData = {
+  todoItem: [
+    { id: 1, text: "aaa"},
+    { id: 2, text: "bbb"},
+    { id: 3, text: "ccc"}
+  ]
+};
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ToDoHead></ToDoHead>
+      <ToDoInput></ToDoInput>
+      <ToDoItemList todoItemList={testData}></ToDoItemList>
     </div>
   );
 }
