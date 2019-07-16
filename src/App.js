@@ -4,6 +4,8 @@ import './App.css';
 import ToDoHead from './components/head/ToDoHead';
 import ToDoInput from './components/add/ToDoInput';
 import ToDoItemList from './components/items/ToDoItemList';
+import ComponentTemplate from './components/componentTemplate';
+import FunctionalComponentTemplate from './components/functionalComponentTemplate';
 
 let testData = {
   todoItem: [
@@ -17,6 +19,13 @@ let testData = {
 function App() {
   return (
     <div className="App">
+      {/* 컴포넌트 구조에 익숙해지기 위한 연습용 */}
+      <ComponentTemplate></ComponentTemplate>
+      <br></br>
+      <FunctionalComponentTemplate></FunctionalComponentTemplate>
+      <br></br>
+
+      {/* Todolist 컴포넌트 배치 */}
       <ToDoHead></ToDoHead>
       <ToDoInput></ToDoInput>
       <ToDoItemList todoItemList={testData}></ToDoItemList>
