@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 
 class ToDoItem extends Component {
-    props = {
-        id: this.props.id,
-        text: this.props.text
+    constructor(props) {
+        super(props);
     }
 
     render () {
-        console.log("todoitem");
         return (
-            <li>{this.props.text}</li>
+            <li>{this.props.key} - {this.props.text}</li>
         )
     }
 }
