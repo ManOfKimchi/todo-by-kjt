@@ -12,19 +12,19 @@ class ToDoItemList extends Component {
     
     render () {
         const todoList = this.props.todoItemList.map(
-            ({id, text}) => (
+            ({guid, todoText, created}) => (
                 <ToDoItem 
-                    key={id}
-                    text={text}
+                    guid={guid}
+                    todoText={todoText}
+                    created={created}
+                    deleteItemToLocalStorageFn={this.props.deleteItemToLocalStorageFn}
                 />
             )
         );
         return (
-            <ul>
-                ul 그룹이다
+            <table border="1">
                 {todoList}
-            </ul>
-            
+            </table>
         )
     }
 }

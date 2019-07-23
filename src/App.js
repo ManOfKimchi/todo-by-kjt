@@ -6,14 +6,13 @@ import ToDoHead from './components/head/ToDoHead';
 import ToDoItemList from './components/items/ToDoItemList';
 import ToDoInputContainer from './components/add/ToDoInputContainer';
 
+const localStorageKey = 'todo_kjt';
+
 class App extends Component {
 
   state = {
     input: '',
-    todoList: [{
-      id: this.createGuid(),
-      text: 'test'
-    }]
+    todoList: this.getItemFromLocalStorage()
   }
 
   refresh = (e) => {
@@ -28,15 +27,24 @@ class App extends Component {
     });
   }
 
+  // localStorage 저장 데이터
+  // sample = {
+  //   guid: 'guid',
+  //   todoText: 'todo',
+  //   created: new Date()
+  // }
+
   addTodoItem = (e) => {
+    let newItem = {
+      guid: this.createGuid(),
+      todoText: this.state.input,
+      created: (new Date()).toString()
+    };
     this.setState({
       input: '',
-      todoList: this.state.todoList.concat({
-        id: this.createGuid(),
-        text: this.state.input
-      })
+      todoList: this.state.todoList.concat(newItem)
     });
-    console.log(this.state);
+    this.addItemToLocalStorage(newItem.guid, newItem.todoText, newItem.created);
   }
 
   createGuid() {
@@ -46,13 +54,58 @@ class App extends Component {
     });
   }
 
+  // localStorage 관련
+
+  addItemToLocalStorage(guid, text, created) {
+    // 기존 데이터(또는 초기데이터)
+    var localDataStr = localStorage.getItem(localStorageKey) 
+      ? localStorage.getItem(localStorageKey)
+      : "[]";
+    // 기존데이터에 저장하기 위해 파싱
+    var localData = JSON.parse(localDataStr);
+    localData.push({
+      guid: guid,
+      todoText: text,
+      created: created
+    });
+    localStorage.setItem(localStorageKey, JSON.stringify(localData));
+  }
+
+  getItemFromLocalStorage() {
+    var localStorageData = localStorage.getItem(localStorageKey);
+    var parsedData = localStorageData 
+      ? JSON.parse(localStorageData)
+      : [];
+    var todoItemList = parsedData 
+      ? parsedData
+      : [];
+    return todoItemList;
+  }
+
+  deleteItemToLocalStorage = (guid) => {
+    // todo_kjt 키에 저장된 string 중 해당 todo 제거 후 덮어씌움
+    var localData = this.getItemFromLocalStorage();
+    if (!Array.isArray(localData) || localData.length < 1) return;
+    var filtered = localData.filter(d => d.guid !== guid);
+    this.setState({
+      todoList: filtered
+    });
+    localStorage.setItem(localStorageKey, JSON.stringify(filtered));
+  }
+
+  clearLocalStorage() {
+    localStorage.setItem(localStorageKey, []);
+  }
+
   render() {
     const { input, todoList } = this.state;
     const {
       refresh,
       keyChange,
-      addTodoItem
+      addTodoItem,
+      deleteItemToLocalStorage
     } = this;
+
     return (
       <div className="App">  
         {/* Todolist 컴포넌트 배치 */}
@@ -61,7 +114,9 @@ class App extends Component {
           addTodoItemFn={addTodoItem} 
           input={input}
           keyChange={keyChange}></ToDoInputContainer>
-        <ToDoItemList todoItemList={todoList}></ToDoItemList> 
+        <ToDoItemList 
+          todoItemList={todoList}
+          deleteItemToLocalStorageFn={deleteItemToLocalStorage}></ToDoItemList> 
       </div>
     );
   }
