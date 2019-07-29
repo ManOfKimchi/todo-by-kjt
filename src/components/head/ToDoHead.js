@@ -9,7 +9,7 @@ class ToDoHead extends Component {
     render() {
         return (
             <Fragment>
-                <h2 onClick={this.props.refreshFn}>적절한 제목</h2>
+                <h2 onClick={this.props.refreshFn}>Todo List by KJT</h2>
             </Fragment>
         )
     }

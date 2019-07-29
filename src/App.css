@@ -31,3 +31,8 @@
     transform: rotate(360deg);
   }
 }
+
+.Todo-table {
+  width: 100%;
+  border: 1px solid #123456;
+}

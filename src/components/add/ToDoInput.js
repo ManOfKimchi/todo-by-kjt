@@ -1,8 +1,14 @@
 import React, { Component, Fragment } from 'react';
+import Input from '@material-ui/core/Input';
+import { styled } from '@material-ui/styles';
+
+const TodoInput = styled(Input)({
+    width: "60%"
+});
 
 class ToDoInput extends Component {
     static defaultProps = {
-        placeholder: "default placeholder"
+        placeholder: "Add your todo..."
     }
     constructor(props) {
         super(props);
@@ -11,10 +17,10 @@ class ToDoInput extends Component {
     render () {
         return (
             <Fragment>
-                <input 
+                <TodoInput 
                     placeholder={this.props.placeholder} 
                     onChange={this.props.keyChange} 
-                    value={this.props.input}></input>
+                    value={this.props.input}></TodoInput>
             </Fragment>
         )
     }
