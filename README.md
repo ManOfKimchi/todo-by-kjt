@@ -12,8 +12,8 @@
 1. window 객체에 포함됨
 1. 모바일은 2.5mb, 데스크탑은 5mb~10mb
 1. localStorage: 지속 필요한 데이터
-1. sessionStorage: 일회성 데이터
-1.cookie:  
+1. sessionStorage: 일회성 데이터  
+1. cookie:  
   1) 출생의 비밀: 서버/클라이언트 데이터 교환을 위해 만들어짐(HTTP request에 사용), 
   2) 사용기한있음
   3) key value 구조
