@@ -14,12 +14,12 @@
 1. localStorage: 지속 필요한 데이터
 1. sessionStorage: 일회성 데이터  
 1. IndexedDB: https://developer.mozilla.org/ko/docs/IndexedDB/Basic_Concepts_Behind_IndexedDB  
-    키, 값 구조는 동일
-    트랜잭션 DB 모델 기반
-    nosql
-    DOM 이벤트 사용
-    객체지향
-    request 많음
+    키, 값 구조는 동일  
+    트랜잭션 DB 모델 기반  
+    nosql  
+    DOM 이벤트 사용  
+    객체지향  
+    request 많음  
 1. cookie:  
     출생의 비밀: 서버/클라이언트 데이터 교환을 위해 만들어짐(HTTP request에 사용),  
     사용기한있음  
