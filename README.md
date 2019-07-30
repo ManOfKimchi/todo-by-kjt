@@ -14,9 +14,9 @@
 1. localStorage: 지속 필요한 데이터
 1. sessionStorage: 일회성 데이터  
 1. cookie:  
-  1) 출생의 비밀: 서버/클라이언트 데이터 교환을 위해 만들어짐(HTTP request에 사용), 
-  2) 사용기한있음
-  3) key value 구조
-  4) 4kb  
+- 출생의 비밀: 서버/클라이언트 데이터 교환을 위해 만들어짐(HTTP request에 사용),  
+- 사용기한있음  
+- key value 구조  
+- 4kb  
 1. IndexedDB: TODO
 
