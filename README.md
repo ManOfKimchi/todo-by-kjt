@@ -8,17 +8,17 @@
 
 ## ETC
 - storage: https://www.zerocho.com/category/HTML&DOM/post/5918515b1ed39f00182d3048
-
-- storage
--- HTML5에서 추가됨
--- window 객체에 포함됨
--- 모바일은 2.5mb, 데스크탑은 5mb~10mb
--- localStorage: 지속 필요한 데이터
--- sessionStorage: 일회성 데이터
+1. HTML5에서 추가됨
+1. window 객체에 포함됨
+1. 모바일은 2.5mb, 데스크탑은 5mb~10mb
+1. localStorage: 지속 필요한 데이터
+1. sessionStorage: 일회성 데이터
 
 - cookie: 
-  출생의 비밀: 서버/클라이언트 데이터 교환을 위해 만들어짐(HTTP request에 사용), 
-  사용기한있음, key value 구조, 4kb
+  1. 출생의 비밀: 서버/클라이언트 데이터 교환을 위해 만들어짐(HTTP request에 사용), 
+  1. 사용기한있음
+  1. key value 구조
+  1. 4kb
   
 - IndexedDB: TODO
 
