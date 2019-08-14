@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/todo-by-kjt/static/css/main.0b03cd50.chunk.css",
-    "main.js": "/todo-by-kjt/static/js/main.e656c4b4.chunk.js",
-    "main.js.map": "/todo-by-kjt/static/js/main.e656c4b4.chunk.js.map",
+    "main.js": "/todo-by-kjt/static/js/main.97aab873.chunk.js",
+    "main.js.map": "/todo-by-kjt/static/js/main.97aab873.chunk.js.map",
     "runtime~main.js": "/todo-by-kjt/static/js/runtime~main.d81cd466.js",
     "runtime~main.js.map": "/todo-by-kjt/static/js/runtime~main.d81cd466.js.map",
     "static/js/2.41764904.chunk.js": "/todo-by-kjt/static/js/2.41764904.chunk.js",
     "static/js/2.41764904.chunk.js.map": "/todo-by-kjt/static/js/2.41764904.chunk.js.map",
     "index.html": "/todo-by-kjt/index.html",
-    "precache-manifest.071389bfbc1e673f4f0d33fadd3c4cb2.js": "/todo-by-kjt/precache-manifest.071389bfbc1e673f4f0d33fadd3c4cb2.js",
+    "precache-manifest.b294293123bdab8528a27a74d4cf7d31.js": "/todo-by-kjt/precache-manifest.b294293123bdab8528a27a74d4cf7d31.js",
     "service-worker.js": "/todo-by-kjt/service-worker.js",
     "static/css/main.0b03cd50.chunk.css.map": "/todo-by-kjt/static/css/main.0b03cd50.chunk.css.map"
   }
