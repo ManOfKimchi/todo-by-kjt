@@ -37,6 +37,13 @@ class ToDoItemList extends Component {
     constructor(props) {
         super(props);
     }
+
+    onClickFn = (e) => {
+        var val = window.confirm("정말입니까 닝겐?");
+        if (val) {
+            this.props.clearFn();
+        }
+    }
     
     render () {
         const todoList = this.props.todoItemList.map(
@@ -58,7 +65,7 @@ class ToDoItemList extends Component {
                         <StyledTableCell colSpan={7}>Things to do</StyledTableCell>
                         <StyledTableCell colSpan={5}>Created</StyledTableCell>
                         <StyledTableCell colSpan={1}>
-                            <StyledButton onClick={this.props.clearFn}>Clear</StyledButton>
+                            <StyledButton onClick={this.onClickFn}>Clear</StyledButton>
                         </StyledTableCell>
                     </TableRow>
                 </TodoTableHead>
