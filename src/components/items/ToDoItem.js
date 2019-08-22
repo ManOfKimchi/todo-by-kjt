@@ -29,7 +29,7 @@ class ToDoItem extends Component {
     }
 
     getBackgroundColor(checked) {
-        return checked ? 'rgba(255, 91, 79)' : 'rgba(204, 255, 252)';
+        return checked ? 'rgba(255, 136, 128)' : 'rgba(204, 255, 252)';
     }
 
     deleteClickFn = (e) => {
@@ -49,7 +49,7 @@ class ToDoItem extends Component {
                 <TdText colSpan={7} onClick={this.onClickFn}>
                     {this.props.todoText}
                 </TdText>
-                <TdText colSpan={5}>{this.props.created}</TdText>
+                <TdText colSpan={5} onClick={this.onClickFn}>{this.props.created}</TdText>
                 <TdText colSpan={1}>
                     <DeleteButton onClick={this.deleteClickFn}>X</DeleteButton>
                 </TdText>
